@@ -1,0 +1,492 @@
+/*样式重写*/
+body{
+    margin: 0;
+    padding: 0;
+}
+body *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*整体div弹性布局*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/****************************************1、头部***************************************/
+#header{
+    width: 100%;
+    height: 125px;
+}
+
+/************************************2、商品导航，轮播***********************************/
+.container>.shop-nav{
+    width: 1200px;
+    height: 600px;
+}
+
+/*2.1、头部*/
+.container>.shop-nav>.nav-cont{
+    width: 1200px;
+    height: 45px;
+}
+.container>.shop-nav>.nav-cont>.cont-l{
+    width: 180px;
+    height: 45px;
+    background: #d2364c;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 55px;
+}
+.container>.shop-nav>.nav-cont>.cont-r{
+    width: 1020px;
+    height: 45px;
+    justify-content: flex-start;
+}
+.container>.shop-nav>.nav-cont>.cont-r>a{
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 0 25px;
+}
+.container>.shop-nav>.nav-cont>.cont-r>b{
+    color: #333;
+    line-height: 43px;
+    font-weight: lighter;
+}
+
+/*2.2、主体*/
+.container>.shop-nav>.section{
+    width: 1200px;
+    height: 555px;
+}
+/*2.2.1、左侧导航*/
+.container>.shop-nav>.section>.section-l{
+    width: 180px;
+    height: 555px;
+    background: #2b2b2b;
+    border: 1px solid #2b2b2b;
+}
+.container>.shop-nav>.section>.section-l>div{
+    width:180px;
+    height: 6.25%;
+    border-bottom: 1px solid #252525;
+    padding-top: 6px;
+    padding-left: 12px;
+}
+.container>.shop-nav>.section>.section-l>div:nth-child(1){
+    margin-top: 3px;
+}
+.container>.shop-nav>.section>.section-l>div:last-child{
+    border: none;
+}
+.container>.shop-nav>.section>.section-l>div>img{
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+}
+.container>.shop-nav>.section>.section-l>div>a{
+    font-size: 14px;
+    color: #fff;
+    vertical-align: baseline;
+}
+.container>.shop-nav>.section>.section-l>div>em{
+    width: 13px;
+    height: 13px;
+    font: 12px/18px "宋体";
+    color: #9b9b9b;
+}
+/*2.2.2、右侧内容*/
+.container>.shop-nav>.section>.section-r{
+    width: 1010px;
+    height: 555px;
+    margin-left: 7px;
+    margin-right: 3px;
+}
+/*2.2.2.1、轮播*/
+.container>.shop-nav>.section>.section-r>.carousel{
+    margin-top: 12px;
+    width: 760px;
+    height: 320px;
+    position: relative;
+}
+.container>.shop-nav>.section>.section-r>.carousel>ul{
+    position: absolute;
+    bottom: 15px;
+    left: 350px;
+}
+.container>.shop-nav>.section>.section-r>.carousel>ul>li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.container>.shop-nav>.section>.section-r>.carousel>ul>li:nth-child(3){
+    background: #0e90d2;
+}
+/*2.2.2.2、商城头条*/
+.container>.shop-nav>.section>.section-r>.headline{
+    margin-top: 12px;
+    width: 245px;
+    height: 320px;
+    background: #f8f8f8;
+}
+.container>.shop-nav>.section>.section-r>.headline>.headline-t{
+    width: 212px;
+    height: 32px;
+    margin: 35px 35px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #e60012;
+    font-size: 16px;
+    font-weight: 600;
+    font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+    font-size: inherit;
+}
+.container>.shop-nav>.section>.section-r>.headline>.headline-s{
+    overflow: hidden;
+    width: 223px;
+    height: 215px;
+    margin: 0px auto;
+}
+.container>.shop-nav>.section>.section-r>.headline>.headline-s>a{
+    float: none;
+    width: 100%;
+    padding: 0px 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    color: #333;
+}
+/*2.2.2.3、各类活动*/
+.container>.shop-nav>.section>.section-r>.row{
+    width: 250px;
+    height: 208px;
+    margin-top: 15px;
+}
+
+/************************************3、特卖，秒杀***********************************/
+.container>.seckill{
+    width: 1200px;
+    height: 420px;
+}
+/*3.1、上方*/
+.container>.seckill>.seckill-t{
+    width: 1200px;
+    height: 93px;
+    margin-top: 10px;
+    background: #ffd800;
+}
+.container>.seckill>.seckill-t>img{
+    width: 380px;
+    height: 93px;
+}
+.container>.seckill>.seckill-t>.seckill-time{
+    width: 160px;
+    height: 39px;
+    order: 1;
+    margin-top: 24px;
+    margin-right: 18px;
+    background: url(../img/icon-sale.png);
+}
+.container>.seckill>.seckill-t>.seckill-time>span{
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 24px;
+    color: #ffeee0;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 5px;
+}
+/*3.2、下方*/
+.container>.seckill>.seckill-b{
+    width: 1200px;
+    height: 317.2px;
+    background: #ffd800;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg{
+    width: 292px;
+    height: 311.2px;
+    padding: 0px 2px;
+    margin-right: 4.5px;
+    background: #fff;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg:nth-child(1){
+    margin-left: 9px;
+    margin-right: 4.5px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg:last-child{
+    margin-right: 9px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-pic{
+    width: 292px;
+    height: 240px;
+    margin-left: 50px;
+    padding: 30px 2px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-pic>img{
+    width: 180px;
+    height: 180px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-price{
+    display: block;
+    width: 292px;
+    height: 71.2px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-price>a>.p-title{
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    padding: 0px 5px;
+    font-size: 14px;
+    color: #000;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-price>.p-price{
+    width: 90%;
+    margin-left: 20px;
+    padding: 0px 5px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 18px;
+    color: #f52e1f;
+    margin-top: 10px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-price>.p-price>b{
+    font-size: 26px;
+    font-family: arial,"Lantinghei SC","Microsoft Yahei";
+    margin-left: -135px;
+}
+.container>.seckill>.seckill-b>.seckill-b-msg>.seckill-b-price>.p-price>.p-buy{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0px 10px;
+    background: #f52e1f;
+    color: #fff;
+    margin-top: -8px;
+}
+
+/************************************4、1L 甜点***********************************/
+.container>.shopping{
+    width: 1200px;
+    height: 454px;
+}
+/* 4.1、标题 */
+.container>.shopping>.shop-title{
+    justify-content: flex-start;
+    width: 1200px;
+    height: 54px;
+    border-bottom: 2px solid #68937f;
+}
+.container>.shopping>.shop-title>h4{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    font-family: arial,"Lantinghei SC","Microsoft Yahei";
+}
+.container>.shopping>.shop-title>h3{
+    background: #fff7d1;
+    padding: 0 5px;
+    margin-top: 15px;
+    color: #977a6f;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 10px;
+    line-height: 37px;
+    margin-bottom: 5px;
+    font-family: arial,"Lantinghei SC","Microsoft Yahei";
+}
+.container>.shopping>.shop-title>.title-r{
+    width: 600px;
+    height: 20px;
+    margin: 20px 0 0 385px;
+    padding-left: 170px;
+    font-size: 14px;
+    font: inherit;
+    font-family: arial,"Lantinghei SC","Microsoft Yahei";
+    color: #000;
+}
+.container>.shopping>.shop-title>.title-r>a{
+    color: #000;
+}
+/* 4.2、商品 */
+.container>.shopping>.shop-content{
+    width: 1200px;
+    height: 400px;
+}
+/*4.2.1、商品1*/
+.container>.shopping>.shop-content>.shop-one{
+    width: 225px;
+    height: 400px;
+    border-top: 1px solid #eee;
+}
+.container>.shopping>.shop-content>.shop-one>.shop-one-t{
+    width: 225px;
+    height: 100px;
+    padding: 10px 10px 0 10px;
+}
+.container>.shopping>.shop-content>.shop-one>.shop-one-t>a{
+    display: block;
+    width: 28px;
+    height: 19px;
+    margin: 5px 20px;
+    color: #2f2f2f;
+    font-size: 14px;
+}
+.container>.shopping>.shop-content>.shop-one>.shop-one-b{
+    width: 225px;
+    height: 300px;
+}
+.container>.shopping>.shop-content>.shop-one>.shop-one-b>p{
+    width: 220.5px;
+    height: 22px;
+    font-size: 16px;
+    color: #F03726;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 28px auto 0;
+    padding-left: 45px;
+}
+.container>.shopping>.shop-content>.shop-one>.shop-one-b>b{
+    width: 220.5px;
+    height: 16px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 100;
+    margin: -27px 0 0 55px;
+}
+.container>.shopping>.shop-content>.shop-one>.shop-one-b>img{
+    width: 160px;
+    height: 160px;
+    margin: -10px 0 10px 40px;
+}
+/*4.2.2、商品2*/
+.container>.shopping>.shop-content>.shop-two{
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#6bdea7,#68937f);
+    background-image: linear-gradient(rgb(107, 222, 167), rgb(104, 147, 127));
+}
+.container>.shopping>.shop-content>.shop-two>.shop-two-t{
+    width: 300px;
+    height: 45px;
+    margin: 40px 80px;
+}
+.container>.shopping>.shop-content>.shop-two>.shop-two-t>p{
+    height: 21px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 21px;
+}
+.container>.shopping>.shop-content>.shop-two>.shop-two-t>b{
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 12px;
+    padding-left: 45px;
+}
+.container>.shopping>.shop-content>.shop-two>a>img{
+    width: 270px;
+    height: 270px;
+    margin: -20px 0 0px 11px;
+}
+/*4.2.3、商品3*/
+.container>.shopping>.shop-content>.shop-three{
+    width: 224px;
+    height: 400px;
+}
+.container>.shopping>.shop-content>.shop-three>.shop-like{
+    width: 224px;
+    height: 199px;
+    border-top: 1px solid #eee;
+}
+.container>.shopping>.shop-content>.shop-three>.shop-like>a>img{
+    width: 147.83px;
+    height: 147.83px;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+.container>.shopping>.shop-content>.shop-three>.shop-like>.shop-t{
+    width: 60px;
+    height: 36px;
+    margin-bottom: 5px;
+    margin-left: 82px;
+}
+.container>.shopping>.shop-content>.shop-three>.shop-like>.shop-t>p{
+    width: 56px;
+    height: 22px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    line-height: 22px;
+}
+.container>.shopping>.shop-content>.shop-three>.shop-like>.shop-t>b{
+    width: 22px;
+    height: 14px;
+    color: #666;
+    line-height: 12px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+
+
+/*4.2.4、商品4*/
+.container>.shopping>.shop-content>.shop-four{
+    width: 224px;
+    height: 400px;
+    background: #9b9b9b;
+}
+/*4.2.5、商品5*/
+.container>.shopping>.shop-content>.shop-five{
+    width: 224px;
+    height: 400px;
+}
+.container>.shopping>.shop-content>.shop-five>.shop-like{
+    width: 224px;
+    height: 199px;
+    border-top: 1px solid #eee;
+}
+.container>.shopping>.shop-content>.shop-five>.shop-like>a>img{
+    width: 147.83px;
+    height: 147.83px;
+    margin-top: 10px;
+    margin-left: 38px;
+}
+.container>.shopping>.shop-content>.shop-five>.shop-like>.shop-t{
+    width: 60px;
+    height: 36px;
+    margin-bottom: 5px;
+    margin-left: 82px;
+}
+.container>.shopping>.shop-content>.shop-five>.shop-like>.shop-t>p{
+    width: 56px;
+    height: 22px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    line-height: 22px;
+}
+.container>.shopping>.shop-content>.shop-five>.shop-like>.shop-t>b{
+    width: 22px;
+    height: 14px;
+    color: #666;
+    line-height: 12px;
+    font-size: 12px;
+    margin-left: 15px;
+}
